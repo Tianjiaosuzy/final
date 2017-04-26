@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/index-style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <!--   Navbar  -->
+    <div class="navbar-fixed">
+        <nav class="white" style="opacity: 0.9;filter: alpha(opacity=90)">
+            <div class="nav-wrapper">
+                <div class="nav-wrapper container">
+                    <a class="brand-logo" href="index.html">Conlang</a>
+                    <ul class="right">
+                        <li><a href="#!">About</a></li>
+                        <li><a href="plaza.html">Plaza</a></li>
+                        <li><a href="Pre-test.html">Learn</a></li>
+                        <li><a href="#!">Q&A Forum</a></li>
+                        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Your Profile</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Homepage</a></li>
+                            <li><a href="#!">Lessons</a></li>
+                            <li><a href="#!">Notes</a></li>
+                            <li><a href="#!">Bookmarked</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Settings</a></li>
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br></br>
+                <h1 class="header center white-text text-bold" style="font-family: Comic Sans MS">Blogging In a New Language</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Put the language in your real life. Create life profolio in another language.</h5>
+                </div>
+                <div class="row center">
+                    <a href="Pre-test.html" class="btn-large waves-effect waves-light teal lighten-1" onclick="myFunction()">Start to Create</a>
+                    <script>
+                        function myFunction() {
+                            var txt;
+                            if (confirm("Do you want to start a lesson first?") == true) {
+                                window.location = "Pre-test.html";
+                            } else {
+                                window.location = "index.html";
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    </script>
+
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax"><img src="img/语言.jpg"></div>
+    </div>
+
+    <!--  Today's Video  -->
+    <div id="today">
+        <br></br>
+        <h1 class="header center teal-text text-bold">— Video of The Day —</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s4">
+                    <div class="card">
+                        <iframe src="https://player.vimeo.com/video/68667869" width="640" height="360" frameborder="0" autoplay muted></iframe>
+                        <div class="card-action">
+                            <a href="#">Check out "字" Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <iframe src="https://player.vimeo.com/video/113886783" width="640" height="338" frameborder="0"></iframe>
+                        <div class="card-action">
+                            <a href="#">Check out "建筑" Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <iframe src="https://player.vimeo.com/video/97714437?title=0&byline=0&portrait=0" width="640" height="294" frameborder="0"></iframe>
+                        <div class="card-action">
+                            <a href="#">Check out "中国" Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s4">
+                    <div class="card">
+                        <iframe src="https://player.vimeo.com/video/41120572" width="640" height="480" frameborder="0" autoplay muted></iframe>
+                        <div class="card-action">
+                            <a href="#">Check out "家庭" Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <iframe src="https://player.vimeo.com/video/17304916" width="640" height="480" frameborder="0"></iframe>
+                        <div class="card-action">
+                            <a href="#">Check out "曼哈顿" Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                        <iframe src="https://player.vimeo.com/video/46113428" width="640" height="360" frameborder="0"></iframe>
+                        <div class="card-action">
+                            <a href="#">Check out "老师" Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Today's Post   -->
+    <div id="today">
+        <br></br>
+        <h1 class="header center teal-text text-bold">— Post of The Day —</h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/1.jpg">
+                            <span class="card-title">"吃晚饭"</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light teal lighten-3" onclick="Materialize.toast('Saved in your dictionary!', 4000)"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>今天和几位好朋友一起吃晚饭很开心！这叫麻辣香锅，的确很辣很香！</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Check out "吃晚饭" Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/2.jpg">
+                            <span class="card-title">“狗” “秋天”</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light teal lighten-3" onclick="Materialize.toast('Saved in your dictionary!', 4000)"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p> 秋天来了，是看枫叶的好季节。去爬大熊山，偶遇一只超级可爱的狗，很喜欢！</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Check out "狗"“秋天” Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/3.jpg">
+                            <span class="card-title">“棉花糖”</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light teal lighten-3" onclick="Materialize.toast('Saved in your dictionary!', 4000)"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>原来Marshmellow叫棉花糖呀！很可爱的名字。Fluffy+Flower+Sweet.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Check out "棉花糖" Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/4.jpg">
+                            <span class="card-title">“最喜欢的动物”<br>“长颈鹿”</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light teal lighten-3" onclick="Materialize.toast('Saved in your dictionary!', 4000)"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>我最喜欢的动物是长颈鹿。有一年冬天和朋友一起去动物园，没想到长颈鹿也能在这么冷的天气里生活。</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Check out "长颈鹿"“最喜欢的动物” Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/5.jpg">
+                            <span class="card-title">“童年时光”<br>"迪士尼"</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light teal lighten-3" onclick="Materialize.toast('Saved in your dictionary!', 4000)"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>和好朋友希望一起去了迪士尼。坐上旋转木马的时候感觉像回到了童年时光。</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Check out “童年时光” "迪士尼" Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/6.jpg">
+                            <span class="card-title">“下雪了！”</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light teal lighten-3" onclick="Materialize.toast('Saved in your dictionary!', 4000)"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>哇！！下雪啦！！我的家乡很少下这么大的雪。很兴奋！！</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Check out “下雪了" Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--before footer-->
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 black-text">A place where you can learn a new language, make new friends, share your story, post your life, know about the world!</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="img/grey.jpg" style="opacity: 0.7;filter: alpha(opacity=70)" alt="background img 3"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Conlang.com</h5>
+                    <p class="grey-text text-lighten-4">Conlang.com is a leading language learning and cultural sharing platformwith millions of users worldwide. We make it easy for everyone to create a beautiful and professional daily blog in a new language. </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">ABOUT US</h5>
+                    <ul>
+                        <li><a class="white-text" href="#">Our Value</a></li>
+                        <li><a class="white-text" href="#">Terms of Use</a></li>
+                        <li><a class="white-text" href="#">Employment</a></li>
+                        <li><a class="white-text" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
